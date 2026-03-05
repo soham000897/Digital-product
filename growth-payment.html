@@ -1,8 +1,7 @@
 <!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Growth Kit Payment - Prime Store</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"><style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Growth Kit Payment - Prime Store</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"><style>
 
 *{
 box-sizing:border-box;
@@ -57,13 +56,11 @@ background:#252b3a;
 padding:20px;
 border-radius:12px;
 margin-bottom:15px;
-text-align:center;
 }
 
 .qr img{
-width:260px;
-display:block;
-margin:auto;
+width:100%;
+max-width:260px;
 border-radius:10px;
 }
 
@@ -89,6 +86,16 @@ font-size:15px;
 cursor:pointer;
 }
 
+.support{
+margin-top:15px;
+}
+
+.support a{
+text-decoration:none;
+color:#4facfe;
+font-size:14px;
+}
+
 .instructions{
 margin-top:20px;
 background:#151a25;
@@ -111,21 +118,23 @@ margin-top:auto;
 
 </style></head><body><header>
 <h1>Prime Store</h1>
-</header><div class="container"><div class="card"><h2>Growth Kit</h2><div class="price">Amount: ₹89</div><div class="qr">
-<img src="qr89img.png" alt="Scan QR to Pay ₹89">
-</div><p>UPI ID: <b>primehub@ptyes</b></p><h3>Upload Payment Screenshot</h3><input type="file"><button onclick="sendWhatsApp()">Submit Payment</button>
+</header><div class="container"><div class="card"><h2>Growth Kit Payment</h2><p>Complete the payment and send your screenshot on WhatsApp to receive the Growth Kit.</p><div class="price">Amount: ₹89</div><div class="qr">
+<img src="qr89.png" alt="UPI QR Code for ₹89">
+</div><p>UPI ID: <b>primehub@ptyes</b></p><h3>Upload Payment Screenshot</h3><input type="file"><button onclick="sendWhatsApp()">Send Screenshot on WhatsApp</button>
 
 <script>
 function sendWhatsApp(){
-window.open("https://wa.me/919083946648?text=Hello%20Prime%20Store%20I%20paid%20₹49%20for%20Sticker%20Pack.%20Sending%20my%20payment%20screenshot%20now.");
+window.open("https://wa.me/919083946648?text=Hello%20Prime%20Store%2C%20I%20have%20completed%20the%20payment%20of%20₹89%20for%20the%20Growth%20Kit.%20I%20am%20sending%20my%20payment%20screenshot%20for%20verification.");
 }
-</script></div><div class="instructions"><b>Payment Instructions</b><br>
+</script><div class="support">
+<a href="help.html">Need help? Contact Customer Support</a>
+</div></div><div class="instructions"><b>Payment Instructions</b><br>
 
 1. Open your UPI app (GPay, PhonePe, Paytm).<br>
-2. Scan the QR code shown above.<br>
+2. Scan the QR code above.<br>
 3. Pay exactly ₹89.<br>
-4. Upload your payment screenshot.<br>
-5. Our team will verify and send your download link.
+4. Click the WhatsApp button.<br>
+5. Send your payment screenshot for verification.<br>
 
 </div></div><footer>
 Made with ❤️ by Soham
