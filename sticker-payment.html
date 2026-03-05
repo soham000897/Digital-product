@@ -84,6 +84,11 @@ border-radius:25px;
 color:white;
 font-size:15px;
 cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+transform:scale(1.03);
 }
 
 .support{
@@ -91,6 +96,7 @@ margin-top:15px;
 }
 
 .support a{
+display:inline-block;
 text-decoration:none;
 color:#4facfe;
 font-size:14px;
@@ -118,15 +124,11 @@ margin-top:auto;
 
 </style></head><body><header>
 <h1>Prime Store</h1>
-</header><div class="container"><div class="card"><h2>Sticker Pack Payment</h2><p>Complete the payment and send your screenshot on WhatsApp to receive your sticker pack.</p><div class="price">Amount: ₹49</div><div class="qr">
-<img src="qr49.png" alt="UPI QR Code for ₹49">
-</div><p>UPI ID: <b>primehub@ptyes</b></p><h3>Upload Payment Screenshot</h3><input type="file"><button onclick="sendWhatsApp()">Send Screenshot on WhatsApp</button>
-
-<script>
-function sendWhatsApp(){
-window.open("https://wa.me/919083946648?text=Hello%20Prime%20Store%2C%20I%20have%20completed%20the%20payment%20of%20₹49%20for%20the%20Sticker%20Pack.%20I%20am%20sending%20my%20payment%20screenshot%20for%20verification.");
-}
-</script><div class="support">
+</header><div class="container"><div class="card"><h2>Sticker Pack Payment</h2><p>Pay securely using UPI and send your screenshot on WhatsApp to receive your sticker pack.</p><div class="price">Amount: ₹49</div><div class="qr">
+<img src="qr49.png" alt="Scan to Pay ₹49">
+</div><p>UPI ID: <b>primehub@ptyes</b></p><h3>Upload Payment Screenshot</h3><input type="file"><a href="https://wa.me/919083946648?text=Hello%20Prime%20Store%2C%20I%20have%20paid%20₹49%20for%20the%20Sticker%20Pack.%20Sending%20my%20payment%20screenshot%20now." target="_blank">
+<button>Send Screenshot on WhatsApp</button>
+</a><div class="support">
 <a href="help.html">Need help? Contact Customer Support</a>
 </div></div><div class="instructions"><b>Payment Instructions</b><br>
 
