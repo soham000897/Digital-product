@@ -1,8 +1,7 @@
 <!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Growth Kit Payment - Prime Store</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"><style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Growth Kit Payment - Prime Store</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"><style>
 
 *{
 box-sizing:border-box;
@@ -30,15 +29,13 @@ margin:0;
 font-size:24px;
 }
 
-/* CONTAINER */
-
 .container{
 max-width:520px;
 margin:auto;
 padding:30px 18px;
 }
 
-/* PAYMENT CARD */
+/* CARD */
 
 .card{
 background:#1a1f2b;
@@ -65,11 +62,13 @@ background:#252b3a;
 padding:20px;
 border-radius:12px;
 margin-bottom:15px;
+text-align:center;
 }
 
 .qr img{
-width:100%;
-max-width:260px;
+width:260px;
+display:block;
+margin:auto;
 border-radius:10px;
 }
 
@@ -97,11 +96,6 @@ border-radius:25px;
 color:white;
 font-size:15px;
 cursor:pointer;
-transition:0.2s;
-}
-
-button:hover{
-transform:scale(1.03);
 }
 
 /* INSTRUCTIONS */
@@ -131,7 +125,7 @@ margin-top:auto;
 </style></head><body><header>
 <h1>Prime Store</h1>
 </header><div class="container"><div class="card"><h2>Growth Kit</h2><div class="price">Amount: ₹89</div><div class="qr">
-<img src="qr89.png" alt="Scan to Pay ₹89">
+<img src="./qr89.png" alt="Scan QR to Pay ₹89">
 </div><p>UPI ID: <b>primehub@ptyes</b></p><h3>Upload Payment Screenshot</h3><input type="file"><button onclick="window.location.href='success.html'">
 Submit Payment
 </button></div><div class="instructions"><b>Payment Instructions</b><br>
