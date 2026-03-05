@@ -113,9 +113,13 @@ margin-top:auto;
 <h1>Prime Store</h1>
 </header><div class="container"><div class="card"><h2>Growth Kit</h2><div class="price">Amount: ₹89</div><div class="qr">
 <img src="qr89img.png" alt="Scan QR to Pay ₹89">
-</div><p>UPI ID: <b>primehub@ptyes</b></p><h3>Upload Payment Screenshot</h3><input type="file"><button onclick="window.location.href='success.html'">
-Submit Payment
-</button></div><div class="instructions"><b>Payment Instructions</b><br>
+</div><p>UPI ID: <b>primehub@ptyes</b></p><h3>Upload Payment Screenshot</h3><input type="file"><button onclick="sendWhatsApp()">Submit Payment</button>
+
+<script>
+function sendWhatsApp(){
+window.open("https://wa.me/919083946648?text=Hello%20Prime%20Store%20I%20paid%20₹49%20for%20Sticker%20Pack.%20Sending%20my%20payment%20screenshot%20now.");
+}
+</script></div><div class="instructions"><b>Payment Instructions</b><br>
 
 1. Open your UPI app (GPay, PhonePe, Paytm).<br>
 2. Scan the QR code shown above.<br>
