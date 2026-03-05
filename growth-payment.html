@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Growth Kit Payment</title>
+<title>Growth Kit Payment - Prime Store</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"><style>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
+*{
+box-sizing:border-box;
+-webkit-tap-highlight-color:transparent;
+}
 
 body{
 margin:0;
-font-family:Poppins;
-background:#0f1117;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#0f1117,#1c2230);
 color:white;
 display:flex;
 flex-direction:column;
@@ -25,33 +25,70 @@ padding:20px;
 border-bottom:1px solid #2a3142;
 }
 
-.container{
-max-width:500px;
-margin:auto;
-padding:30px;
+header h1{
+margin:0;
+font-size:24px;
 }
+
+/* CONTAINER */
+
+.container{
+max-width:520px;
+margin:auto;
+padding:30px 18px;
+}
+
+/* PAYMENT CARD */
 
 .card{
 background:#1a1f2b;
+border:1px solid #2a3142;
 border-radius:16px;
 padding:25px;
 text-align:center;
-border:1px solid #2a3142;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
+
+/* PRICE */
 
 .price{
 font-size:24px;
 color:#4facfe;
-margin:15px 0;
+margin:10px 0 20px;
+font-weight:600;
+}
+
+/* QR */
+
+.qr{
+background:#252b3a;
+padding:20px;
+border-radius:12px;
+margin-bottom:15px;
 }
 
 .qr img{
-width:250px;
+width:100%;
+max-width:260px;
 border-radius:10px;
 }
 
+/* INPUT */
+
+input{
+width:100%;
+padding:10px;
+margin-top:12px;
+border-radius:8px;
+border:none;
+background:#2a3142;
+color:white;
+}
+
+/* BUTTON */
+
 button{
-margin-top:20px;
+margin-top:15px;
 background:linear-gradient(45deg,#4facfe,#00c6ff);
 border:none;
 padding:12px;
@@ -59,38 +96,53 @@ width:100%;
 border-radius:25px;
 color:white;
 font-size:15px;
+cursor:pointer;
+transition:0.2s;
 }
 
-</style>
-</head>
+button:hover{
+transform:scale(1.03);
+}
 
-<body>
+/* INSTRUCTIONS */
 
-<header>
+.instructions{
+margin-top:20px;
+background:#151a25;
+border:1px solid #2a3142;
+border-radius:14px;
+padding:16px;
+font-size:13px;
+color:#9aa4b2;
+line-height:1.6;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:15px;
+font-size:13px;
+color:#9aa4b2;
+border-top:1px solid #2a3142;
+margin-top:auto;
+}
+
+</style></head><body><header>
 <h1>Prime Store</h1>
-</header>
-
-<div class="container">
-
-<div class="card">
-
-<h2>Growth Kit</h2>
-
-<div class="price">Amount ₹89</div>
-
-<div class="qr">
-<img src="qr89.png">
-</div>
-
-<p>UPI ID: <b>primehub@ptyes</b></p>
-
-<button onclick="window.location.href='success.html'">
+</header><div class="container"><div class="card"><h2>Growth Kit</h2><div class="price">Amount: ₹89</div><div class="qr">
+<img src="qr89.png" alt="Scan to Pay ₹89">
+</div><p>UPI ID: <b>primehub@ptyes</b></p><h3>Upload Payment Screenshot</h3><input type="file"><button onclick="window.location.href='success.html'">
 Submit Payment
-</button>
+</button></div><div class="instructions"><b>Payment Instructions</b><br>
 
-</div>
+1. Open your UPI app (GPay, PhonePe, Paytm).<br>
+2. Scan the QR code shown above.<br>
+3. Pay exactly ₹89.<br>
+4. Upload your payment screenshot.<br>
+5. Our team will verify and send your download link.
 
-</div>
-
-</body>
+</div></div><footer>
+Made with ❤️ by Soham
+</footer></body>
 </html>
