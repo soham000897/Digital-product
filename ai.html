@@ -1,1 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Prompt Vault - Prime Store</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing:border-box;
+-webkit-tap-highlight-color:transparent;
+}
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#0f1117,#1c2230);
+color:white;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:20px;
+border-bottom:1px solid #2a3142;
+}
+
+header h1{
+margin:0;
+font-size:24px;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+display:flex;
+justify-content:center;
+align-items:center;
+flex:1;
+padding:30px 15px;
+}
+
+/* PRODUCT CARD */
+
+.card{
+background:#1a1f2b;
+border:1px solid #2a3142;
+border-radius:16px;
+padding:28px;
+max-width:420px;
+width:100%;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+transition:0.25s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#4facfe;
+}
+
+/* ICON */
+
+.icon{
+height:70px;
+width:70px;
+margin:auto;
+border-radius:16px;
+background:linear-gradient(45deg,#4facfe,#00f2fe);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+margin-bottom:15px;
+}
+
+/* TEXT */
+
+h2{
+margin:10px 0;
+}
+
+.description{
+color:#9aa4b2;
+font-size:14px;
+line-height:1.6;
+}
+
+/* FEATURES */
+
+.features{
+margin-top:18px;
+text-align:left;
+color:#c7d0dd;
+font-size:14px;
+}
+
+.features li{
+margin-bottom:6px;
+}
+
+/* PRICE */
+
+.price{
+margin:18px 0;
+font-size:22px;
+font-weight:600;
+color:#4facfe;
+}
+
+/* BUTTON */
+
+.buy{
+background:linear-gradient(45deg,#4facfe,#00c6ff);
+border:none;
+padding:12px 28px;
+border-radius:30px;
+font-size:15px;
+color:white;
+cursor:pointer;
+transition:0.25s;
+}
+
+.buy:hover{
+transform:scale(1.05);
+}
+
+.buy:active{
+transform:scale(0.92);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:15px;
+font-size:13px;
+color:#9aa4b2;
+border-top:1px solid #2a3142;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Prime Store</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<div class="icon">AI</div>
+
+<h2>AI Prompt Vault</h2>
+
+<p class="description">
+A powerful collection of ready-to-use AI prompts designed to help creators, students, and professionals generate ideas, content, and solutions faster.
+</p>
+
+<ul class="features">
+<li>✔ 120+ powerful AI prompts</li>
+<li>✔ Works with ChatGPT and other AI tools</li>
+<li>✔ Categories for content, study, and productivity</li>
+<li>✔ Easy copy-paste format</li>
+<li>✔ Instant download after payment</li>
+</ul>
+
+<div class="price">₹99</div>
+
+<a href="payment.html">
+<button class="buy">Buy Now</button>
+</a>
+
+</div>
+
+</div>
+
+<footer>
+Made with ❤️ by Soham
+</footer>
+
+</body>
+</html>
