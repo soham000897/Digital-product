@@ -9,15 +9,10 @@
 
 <style>
 
-*{
-box-sizing:border-box;
--webkit-tap-highlight-color:transparent;
-}
-
 body{
 margin:0;
-font-family:'Poppins',sans-serif;
-background:linear-gradient(135deg,#0f1117,#1c2230);
+font-family:Poppins;
+background:#0f1117;
 color:white;
 display:flex;
 flex-direction:column;
@@ -30,34 +25,22 @@ padding:20px;
 border-bottom:1px solid #2a3142;
 }
 
-header h1{
-margin:0;
-font-size:24px;
-}
-
 .container{
 display:flex;
 justify-content:center;
 align-items:center;
 flex:1;
-padding:30px 15px;
+padding:30px;
 }
 
 .card{
 background:#1a1f2b;
-border:1px solid #2a3142;
 border-radius:16px;
 padding:28px;
 max-width:420px;
 width:100%;
 text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,0.4);
-transition:0.25s;
-}
-
-.card:hover{
-transform:translateY(-6px);
-border-color:#4facfe;
+border:1px solid #2a3142;
 }
 
 .icon{
@@ -73,27 +56,6 @@ font-size:30px;
 margin-bottom:15px;
 }
 
-h2{
-margin:10px 0;
-}
-
-.description{
-color:#9aa4b2;
-font-size:14px;
-line-height:1.6;
-}
-
-.features{
-margin-top:18px;
-text-align:left;
-color:#c7d0dd;
-font-size:14px;
-}
-
-.features li{
-margin-bottom:6px;
-}
-
 .price{
 margin:18px 0;
 font-size:22px;
@@ -102,29 +64,18 @@ color:#4facfe;
 }
 
 .buy{
+display:inline-block;
 background:linear-gradient(45deg,#4facfe,#00c6ff);
-border:none;
 padding:12px 28px;
 border-radius:30px;
-font-size:15px;
 color:white;
-cursor:pointer;
-transition:0.25s;
-}
-
-.buy:hover{
-transform:scale(1.05);
-}
-
-.buy:active{
-transform:scale(0.92);
+text-decoration:none;
+font-size:15px;
 }
 
 footer{
 text-align:center;
 padding:15px;
-font-size:13px;
-color:#9aa4b2;
 border-top:1px solid #2a3142;
 }
 
@@ -145,23 +96,11 @@ border-top:1px solid #2a3142;
 
 <h2>Growth Kit</h2>
 
-<p class="description">
-A powerful digital resource designed to help creators and entrepreneurs grow faster online using proven strategies and tools.
-</p>
-
-<ul class="features">
-<li>✔ Social media growth tips</li>
-<li>✔ Content strategy ideas</li>
-<li>✔ Productivity & marketing tools</li>
-<li>✔ Beginner friendly guide</li>
-<li>✔ Instant download after payment</li>
-</ul>
+<p>Resources and strategies to help you grow faster online.</p>
 
 <div class="price">₹89</div>
 
-<a href="payment.html">
-<button class="buy">Buy Now</button>
-</a>
+<a href="growth-payment.html" class="buy">Buy Now</a>
 
 </div>
 
