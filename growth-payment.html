@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Growth Kit Payment</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Poppins;
+background:#0f1117;
+color:white;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+header{
+text-align:center;
+padding:20px;
+border-bottom:1px solid #2a3142;
+}
+
+.container{
+max-width:500px;
+margin:auto;
+padding:30px;
+}
+
+.card{
+background:#1a1f2b;
+border-radius:16px;
+padding:25px;
+text-align:center;
+border:1px solid #2a3142;
+}
+
+.price{
+font-size:24px;
+color:#4facfe;
+margin:15px 0;
+}
+
+.qr img{
+width:250px;
+border-radius:10px;
+}
+
+button{
+margin-top:20px;
+background:linear-gradient(45deg,#4facfe,#00c6ff);
+border:none;
+padding:12px;
+width:100%;
+border-radius:25px;
+color:white;
+font-size:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Prime Store</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Growth Kit</h2>
+
+<div class="price">Amount ₹89</div>
+
+<div class="qr">
+<img src="qr89.png">
+</div>
+
+<p>UPI ID: <b>primehub@ptyes</b></p>
+
+<button onclick="window.location.href='success.html'">
+Submit Payment
+</button>
+
+</div>
+
+</div>
+
+</body>
+</html>
