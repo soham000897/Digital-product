@@ -3,22 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Template Bundle Payment - Prime Store</title>
+<title>Template Bundle Payment</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-box-sizing:border-box;
--webkit-tap-highlight-color:transparent;
-}
-
 body{
 margin:0;
-font-family:'Poppins',sans-serif;
-background:linear-gradient(135deg,#0f1117,#1c2230);
+font-family:Poppins;
+background:#0f1117;
 color:white;
 display:flex;
 flex-direction:column;
@@ -31,63 +25,33 @@ padding:20px;
 border-bottom:1px solid #2a3142;
 }
 
-header h1{
-margin:0;
-font-size:24px;
-}
-
 .container{
-max-width:520px;
+max-width:500px;
 margin:auto;
-padding:30px 18px;
+padding:30px;
 }
 
 .card{
 background:#1a1f2b;
-border:1px solid #2a3142;
 border-radius:16px;
 padding:25px;
 text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,0.4);
-}
-
-.product{
-font-size:20px;
-margin-bottom:5px;
+border:1px solid #2a3142;
 }
 
 .price{
 font-size:24px;
 color:#4facfe;
-margin:10px 0 20px;
-font-weight:600;
-}
-
-.qr{
-background:#252b3a;
-padding:20px;
-border-radius:12px;
-margin-bottom:15px;
+margin:15px 0;
 }
 
 .qr img{
-width:100%;
-max-width:260px;
+width:250px;
 border-radius:10px;
 }
 
-input{
-width:100%;
-padding:10px;
-margin-top:12px;
-border-radius:8px;
-border:none;
-background:#2a3142;
-color:white;
-}
-
 button{
-margin-top:15px;
+margin-top:20px;
 background:linear-gradient(45deg,#4facfe,#00c6ff);
 border:none;
 padding:12px;
@@ -95,27 +59,6 @@ width:100%;
 border-radius:25px;
 color:white;
 font-size:15px;
-cursor:pointer;
-}
-
-.instructions{
-margin-top:20px;
-background:#151a25;
-border:1px solid #2a3142;
-border-radius:14px;
-padding:16px;
-font-size:13px;
-color:#9aa4b2;
-line-height:1.6;
-}
-
-footer{
-text-align:center;
-padding:15px;
-font-size:13px;
-color:#9aa4b2;
-border-top:1px solid #2a3142;
-margin-top:auto;
 }
 
 </style>
@@ -131,19 +74,15 @@ margin-top:auto;
 
 <div class="card">
 
-<div class="product">Template Bundle</div>
+<h2>Template Bundle</h2>
 
-<div class="price">Amount: ₹129</div>
+<div class="price">Amount ₹129</div>
 
 <div class="qr">
-<img src="qr129.png" alt="Scan QR to Pay ₹129">
+<img src="qr129.png">
 </div>
 
 <p>UPI ID: <b>primehub@ptyes</b></p>
-
-<h3>Upload Payment Screenshot</h3>
-
-<input type="file">
 
 <button onclick="window.location.href='success.html'">
 Submit Payment
@@ -151,23 +90,7 @@ Submit Payment
 
 </div>
 
-<div class="instructions">
-
-<b>Payment Instructions</b><br>
-
-1. Open your UPI app.<br>
-2. Scan the QR code.<br>
-3. Pay exactly ₹129.<br>
-4. Upload your payment screenshot.<br>
-5. Your download will be sent after verification.
-
 </div>
-
-</div>
-
-<footer>
-Made with ❤️ by Soham
-</footer>
 
 </body>
 </html>
