@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Creator Toolkit Payment - Prime Store</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"><style>
 
-<title>Creator Toolkit Payment - Prime Store</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+*{
+box-sizing:border-box;
+-webkit-tap-highlight-color:transparent;
+}
 
 body{
 margin:0;
@@ -28,6 +24,11 @@ padding:20px;
 border-bottom:1px solid #2a3142;
 }
 
+header h1{
+margin:0;
+font-size:24px;
+}
+
 .container{
 max-width:520px;
 margin:auto;
@@ -41,11 +42,6 @@ border-radius:16px;
 padding:25px;
 text-align:center;
 box-shadow:0 10px 25px rgba(0,0,0,0.4);
-}
-
-.product{
-font-size:20px;
-margin-bottom:5px;
 }
 
 .price{
@@ -90,6 +86,16 @@ font-size:15px;
 cursor:pointer;
 }
 
+.support{
+margin-top:15px;
+}
+
+.support a{
+text-decoration:none;
+color:#4facfe;
+font-size:14px;
+}
+
 .instructions{
 margin-top:20px;
 background:#151a25;
@@ -110,60 +116,27 @@ border-top:1px solid #2a3142;
 margin-top:auto;
 }
 
-</style>
-</head>
-
-<body>
-
-<header>
+</style></head><body><header>
 <h1>Prime Store</h1>
-</header>
-
-<div class="container">
-
-<div class="card">
-
-<div class="product">Creator Toolkit</div>
-
-<div class="price">Amount: ₹149</div>
-
-<div class="qr">
-<img src="qr149.png" alt="Scan QR to Pay ₹149">
-</div>
-
-<p>UPI ID: <b>primehub@ptyes</b></p>
-
-<h3>Upload Payment Screenshot</h3>
-
-<input type="file">
-
-<button onclick="sendWhatsApp()">Submit Payment</button>
+</header><div class="container"><div class="card"><h2>Creator Toolkit Payment</h2><p>Complete the payment and send your screenshot on WhatsApp to receive the Creator Toolkit.</p><div class="price">Amount: ₹149</div><div class="qr">
+<img src="qr149.png" alt="UPI QR Code for ₹149">
+</div><p>UPI ID: <b>primehub@ptyes</b></p><h3>Upload Payment Screenshot</h3><input type="file"><button onclick="sendWhatsApp()">Send Screenshot on WhatsApp</button>
 
 <script>
 function sendWhatsApp(){
-window.open("https://wa.me/919083946648?text=Hello%20Prime%20Store%20I%20paid%20₹89%20for%20Growth%20Kit.%20Sending%20my%20payment%20screenshot%20now.");
+window.open("https://wa.me/919083946648?text=Hello%20Prime%20Store%2C%20I%20have%20completed%20the%20payment%20of%20₹149%20for%20the%20Creator%20Toolkit.%20I%20am%20sending%20my%20payment%20screenshot%20for%20verification.");
 }
-</script>
+</script><div class="support">
+<a href="help.html">Need help? Contact Customer Support</a>
+</div></div><div class="instructions"><b>Payment Instructions</b><br>
 
-</div>
-
-<div class="instructions">
-
-<b>Payment Instructions</b><br>
-
-1. Open your UPI app.<br>
-2. Scan the QR code.<br>
+1. Open your UPI app (GPay, PhonePe, Paytm).<br>
+2. Scan the QR code above.<br>
 3. Pay exactly ₹149.<br>
-4. Upload payment screenshot.<br>
-5. Your download will be sent after verification.
+4. Click the WhatsApp button.<br>
+5. Send your payment screenshot for verification.<br>
 
-</div>
-
-</div>
-
-<footer>
+</div></div><footer>
 Made with ❤️ by Soham
-</footer>
-
-</body>
+</footer></body>
 </html>
