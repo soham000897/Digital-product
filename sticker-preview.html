@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticker Pack</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,Arial;
+}
+
+body{
+background:linear-gradient(135deg,#020617,#0f172a,#020617);
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding:30px;
+color:white;
+}
+
+/* title */
+
+.badge{
+background:linear-gradient(45deg,#ff3b3b,#ff7a7a);
+padding:6px 14px;
+border-radius:20px;
+font-size:12px;
+margin-bottom:10px;
+}
+
+.title{
+font-size:34px;
+font-weight:700;
+color:#4facfe;
+text-shadow:0 0 15px #4facfe;
+margin-bottom:5px;
+}
+
+.subtitle{
+color:#94a3b8;
+margin-bottom:35px;
+}
+
+/* grid */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:18px;
+max-width:700px;
+width:100%;
+}
+
+/* card */
+
+.card{
+background:rgba(17,24,39,0.6);
+border:1px solid rgba(148,163,184,0.2);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:18px;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:0.35s;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+transform:scale(1.15) rotate(5deg);
+background:#1e293b;
+}
+
+/* emoji */
+
+.card img{
+width:90px;
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-6px)}
+100%{transform:translateY(0)}
+}
+
+/* price */
+
+.price{
+margin-top:40px;
+font-size:30px;
+font-weight:bold;
+color:#00e676;
+text-shadow:0 0 10px #00e676;
+}
+
+.info{
+margin-top:6px;
+color:#94a3b8;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="badge">🔥 BEST SELLER</div>
+
+<div class="title">
+350 Viral WhatsApp Stickers
+</div>
+
+<div class="subtitle">
+10 Premium Packs • Funny • Meme • Cute
+</div>
+
+<div class="grid">
+
+<div class="card"><img src="emoji1.png"></div>
+<div class="card"><img src="emoji2.png"></div>
+<div class="card"><img src="emoji3.png"></div>
+<div class="card"><img src="emoji4.png"></div>
+<div class="card"><img src="emoji5.png"></div>
+
+<div class="card"><img src="emoji6.png"></div>
+<div class="card"><img src="emoji7.png"></div>
+<div class="card"><img src="emoji8.png"></div>
+<div class="card"><img src="emoji9.png"></div>
+<div class="card"><img src="emoji10.png"></div>
+
+</div>
+
+<div class="price">
+Only ₹49
+</div>
+
+<div class="info">
+350+ Stickers • Instant Delivery
+</div>
+
+</body>
+</html>
